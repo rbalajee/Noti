@@ -107,7 +107,7 @@ Make sure you have Go installed in your system.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-For examples, please refer to the Brightcove Live Notifications [Documentation](https://apis.support.brightcove.com/live-api/guides/live-api-notifications.html)_
+For examples, please refer to the Brightcove Live API Notifications [Documentation](https://apis.support.brightcove.com/live-api/guides/live-api-notifications.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
