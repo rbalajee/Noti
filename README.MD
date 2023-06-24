@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -58,7 +59,7 @@ The NET/HTTP server listens on port 3001 and logs the Event, Job ID and State of
 
 ### Built With
 
-* [![Go][Golang]][Go-url]
+* [Golang][Go-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +69,7 @@ The NET/HTTP server listens on port 3001 and logs the Event, Job ID and State of
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-* go get 
+* git clone https://github.com/rbalajee/Noti.git
 * go run .
 
 ### Prerequisites
@@ -79,14 +80,12 @@ Make sure you have Go installed in your system.
   go install golang.org/dl/"VERSION"@latest
   ```
 
-* Go version
+* Check your Go version
   ```sh
   go version
   ```
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
@@ -94,7 +93,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 2. Set the port to desired value
    ```sh
-   const port = ""
+   const port = ":3001"
    ```
 3. Start the server from `main.go`
    ```js
@@ -108,7 +107,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-_For more examples, please refer to the [Documentation](https://apis.support.brightcove.com/live-api/guides/live-api-notifications.html)_
+For examples, please refer to the Brightcove Live Notifications [Documentation](https://apis.support.brightcove.com/live-api/guides/live-api-notifications.html)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +121,7 @@ _For more examples, please refer to the [Documentation](https://apis.support.bri
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add Support for all APIs that return JSON notification
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/rbalajee/Noti/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +157,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - rahul.ram.4197@gmail.com
+Your Name - [Rahul Balajee](rahul.ram.4197@gmail.com)
 
 Project Link: [https://github.com/rbalajee/noti](https://github.com/rbalajee/noti)
 
