@@ -1,6 +1,7 @@
 package main
 
 import (
+	"expvar"
 	"fmt"
 	"log"
 	"net/http"
@@ -17,6 +18,8 @@ func main() {
 
 	// Convert our APIListener function to a Handler using mux.HandleFunc which implements the ServeHTTP method
 	mux.HandleFunc("/listen", handlers.APIListener)
+
+	mux.HandleFunc("/debug/vars", expvar.Handler().ServeHTTP)
 
 	// Start a server and listen to connections on port 3001
 	fmt.Printf("\nListening to connections on path `/listen` on port %s\n", port)

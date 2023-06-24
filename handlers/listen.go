@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
+	_ "expvar"
 	"fmt"
 	"io"
 	"log"
@@ -28,10 +29,13 @@ func APIListener(w http.ResponseWriter, r *http.Request) {
 	var out UnmarshalledOutput
 
 	// JSON unmarshall the request body to UnmarshalledOutput struct
-	err = json.Unmarshal(body, &out)
-	if err != nil {
-		log.Printf("\nERROR: Unmarshalling data from request body :: ERROR MESSAGE: %v", err)
-	}
+	_ = json.Unmarshal(body, &out)
+
+	/*
+		if err != nil {
+			log.Printf("\nERROR: Unmarshalling data from request body :: ERROR MESSAGE: %v", err)
+		}
+	*/
 
 	fmt.Printf("\nEvent: %s", out.Event)
 	fmt.Printf("\nJob ID: %s", out.Job.ID)
