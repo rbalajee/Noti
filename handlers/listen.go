@@ -39,7 +39,11 @@ func StateChangeListener(w http.ResponseWriter, r *http.Request) {
 		}
 	*/
 
-	fmt.Printf("\nEvent: %s", out.Event)
-	fmt.Printf("\nJob ID: %s", out.ID)
-	fmt.Printf("\nJob State: %s\n", out.State)
+	if out.Event == "" {
+		return
+	} else {
+		fmt.Printf("\nEvent: %s", out.Event)
+		fmt.Printf("\nJob ID: %s", out.ID)
+		fmt.Printf("\nJob State: %s\n", out.State)
+	}
 }
