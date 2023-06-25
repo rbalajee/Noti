@@ -17,8 +17,10 @@ type UnmarshalledOutput struct {
 }
 
 type Job struct {
-	ID    string `json:"id"`
-	State string `json:"state"`
+	ID        string `json:"id"`
+	State     string `json:"state"`
+	SsaiState string `json:"ssai_state"`
+	SEPState  string `json:"sep_state"`
 }
 
 func StateChangeListener(w http.ResponseWriter, r *http.Request) {
@@ -45,7 +47,9 @@ func StateChangeListener(w http.ResponseWriter, r *http.Request) {
 	} else {
 		fmt.Printf("\nEvent: %s", out.Event)
 		fmt.Printf("\nJob ID: %s", out.ID)
-		fmt.Printf("\nJob State: %s\n", out.State)
+		fmt.Printf("\nJob State: %s", out.State)
+		fmt.Printf("\nSEP State: %s", out.SEPState)
+		fmt.Printf("\nSSAI State: %s", out.SsaiState)
 		fmt.Printf("\nTime: %v\n", time.Now())
 	}
 }
