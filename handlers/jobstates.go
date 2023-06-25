@@ -45,7 +45,7 @@ func StateChangeListener(w http.ResponseWriter, r *http.Request) {
 	if out.Event == "" {
 		return
 	} else {
-		fmt.Println("=== Job State Change Registered ===")
+		fmt.Println("\n=== Job State Change Registered ===")
 		fmt.Printf("\nEvent: %s", out.Event)
 		fmt.Printf("\nJob ID: %s", out.ID)
 		fmt.Printf("\nJob State: %s", out.State)

@@ -39,10 +39,10 @@ func JVODStateChangeListener(w http.ResponseWriter, r *http.Request) {
 	if out.Event == "" {
 		return
 	} else {
-		fmt.Println("=== JVOD State Change Registered ===")
+		fmt.Println("\n=== JVOD State Change Registered ===")
 		fmt.Printf("\nEvent: %s", out.Event)
-		fmt.Printf("\nJob ID: %s", out.JobID)
-		fmt.Printf("\nJob State: %s", out.JvodState)
+		fmt.Printf("\nJVOD ID: %s", out.JobID)
+		fmt.Printf("\nJVOD State: %s", out.JvodState)
 		fmt.Printf("\nTime: %v\n", time.Now())
 	}
 }

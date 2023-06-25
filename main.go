@@ -30,7 +30,7 @@ func main() {
 	}
 
 	// Start a net/http server and listen to connections
-	fmt.Printf("\nListening to connections port `%s`\n", port)
+	fmt.Printf("\nListening to connections on port `%s`\n", port)
 	err = http.ListenAndServe(port, routes.Routes())
 	if err != nil {
 		log.Fatalf("\nERROR: Unable to start the listener :: ERROR MESSAGE: %v", err)
