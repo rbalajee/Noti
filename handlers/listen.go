@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"time"
 )
 
 // Fields that will be read from the request body when unmarshalling to output
@@ -45,5 +46,6 @@ func StateChangeListener(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("\nEvent: %s", out.Event)
 		fmt.Printf("\nJob ID: %s", out.ID)
 		fmt.Printf("\nJob State: %s\n", out.State)
+		fmt.Printf("\nTime: %v\n", time.Now())
 	}
 }
