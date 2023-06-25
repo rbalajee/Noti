@@ -13,7 +13,7 @@ func Routes() *http.ServeMux {
 	mux := http.NewServeMux()
 
 	// Convert our APIListener function to a Handler using mux.HandleFunc which implements the ServeHTTP method
-	mux.HandleFunc("/listen", handlers.APIListener)
+	mux.HandleFunc("/state-change", handlers.StateChangeListener)
 
 	mux.HandleFunc("/debug/vars", expvar.Handler().ServeHTTP)
 
